@@ -1,0 +1,52 @@
+/* ── Daino brand colours ── */
+:root {
+    --color-cream: #FAF8F3;
+    /* main background */
+    --color-food: #D85A30;
+    /* terracotta / food */
+    --color-coffee: #BA7517;
+    /* amber / coffee */
+    --color-travel: #378ADD;
+    /* sky blue / travel */
+    --color-love: #D4537E;
+    /* dusty pink / love */
+    --color-places: #1D9E75;
+    /* teal / places */
+    --color-text: #2C2A27;
+    /* warm charcoal */
+    --color-muted: #888780;
+    /* secondary text */
+}
+
+/* ── Reset — remove browser default spacing ── */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── Base page style ── */
+body {
+    font-family: 'Inter', 'Manrope', sans-serif;
+    background-color: var(--color-cream);
+    color: var(--color-text);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ── Headings use the serif font for editorial feel ── */
+h1,
+h2,
+h3 {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+/* ── Links ── */
+a {
+    color: inherit;
+    text-decoration: none;
+}
