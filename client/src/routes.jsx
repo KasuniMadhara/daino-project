@@ -1,10 +1,13 @@
 // Routes and Route let us map URLs to page components
 import { Routes, Route } from 'react-router-dom'
 
+// ── Import the real Feed page ──
+import Feed from './pages/Feed.jsx'
+
+
 // We'll build these pages one by one — for now they're placeholders
 // Each page will be in client/src/pages/
 
-function Home() { return <h1>Daino — Home Feed</h1> }
 function Login() { return <h1>Login</h1> }
 function Register() { return <h1>Register</h1> }
 function AddMemory() { return <h1>Add a Memory</h1> }
@@ -19,7 +22,7 @@ function Profile() { return <h1>Profile</h1> }
 function AppRoutes() {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Feed />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/add" element={<AddMemory />} />
