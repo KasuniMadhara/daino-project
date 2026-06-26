@@ -1,15 +1,16 @@
-// BrowserRouter lets us use URL-based navigation in React
 import { BrowserRouter } from 'react-router-dom'
-
-// All our page routes are defined in routes.jsx
 import AppRoutes from './routes.jsx'
 
-// App is the outermost shell of Daino
-// Everything lives inside it
+// Import the Navbar component
+import Navbar from './components/layout/Navbar.jsx'
+
 function App() {
   return (
     <BrowserRouter>
-      {/* AppRoutes decides which page to show based on the URL */}
+      {/* Navbar appears on every single page */}
+      <Navbar />
+
+      {/* Page content changes based on the URL */}
       <AppRoutes />
     </BrowserRouter>
   )
